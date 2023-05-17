@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">prueba1</string>
+    <string name="carga">Cargando...</string>
+    <string name="menu">Menú</string>
+    <string name="entrada">Entrada: </string>
+    <string name="sopas">Sopas: </string>
+    <string name="bocadillo">Bocadillos: </string>
+    <string name="boton">Ver Platillo</string>
+</resources>

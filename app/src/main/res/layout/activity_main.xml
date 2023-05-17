@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:text="@string/menu"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/entrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:text="@string/entrada"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/nigiri"
+            android:layout_width="160sp"
+            android:layout_height="142sp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/nigiri"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.217"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/sushi"
+            android:layout_width="160sp"
+            android:layout_height="142sp"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/sushi1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.217"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/platillo2"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:background="@drawable/button_red"
+            android:gravity="center"
+            android:text="@string/boton"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.552"
+            app:layout_constraintStart_toEndOf="@+id/platillo1"
+            app:layout_constraintTop_toBottomOf="@+id/nigiri"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <TextView
+            android:id="@+id/platillo1"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="48dp"
+            android:background="@drawable/button_red"
+            android:gravity="center"
+            android:text="@string/boton"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sushi"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/platillo1"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/sopa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:text="@string/sopas"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/soup_chinese"
+                android:layout_width="160sp"
+                android:layout_height="142sp"
+                android:layout_marginEnd="28dp"
+                android:src="@drawable/sopa_wantan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.806"
+                app:layout_constraintStart_toEndOf="@+id/ramen"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.633"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/ramen"
+                android:layout_width="160sp"
+                android:layout_height="142sp"
+                android:layout_marginStart="28dp"
+                android:src="@drawable/ramen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.633"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/platillo3"
+                android:layout_width="120dp"
+                android:layout_height="38dp"
+                android:background="@drawable/button_red"
+                android:gravity="center"
+                android:text="@string/boton"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.552"
+                app:layout_constraintStart_toEndOf="@+id/platillo4"
+                app:layout_constraintTop_toBottomOf="@+id/ramen"
+                app:layout_constraintVertical_bias="0.021" />
+
+            <TextView
+                android:id="@+id/platillo4"
+                android:layout_width="120dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="48dp"
+                android:background="@drawable/button_red"
+                android:gravity="center"
+                android:text="@string/boton"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ramen"
+                app:layout_constraintVertical_bias="0.021" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
